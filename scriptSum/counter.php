@@ -3,12 +3,10 @@
 declare(strict_types=1);
 
 /**
- * @param string $directory              Исходная директория.
+ * @param string $directory Исходная директория.
  * @param string $targetFile Наименование искомого файла.
  *
  * @return float
- *
- * @throws Exception
  */
 function countSum(string $directory, string $targetFile = 'count'): float
 {

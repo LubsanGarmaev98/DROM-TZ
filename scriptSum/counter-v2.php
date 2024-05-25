@@ -1,6 +1,12 @@
 <?php
 
-function countSum(string $directory, string $targetFile = 'count'): float|int
+/**
+ * @param string $directory Исходная директория.
+ * @param string $targetFile Наименование искомого файла.
+ * 
+ * @return float
+ */
+function countSum(string $directory, string $targetFile = 'count'): float
 {
     $sum = 0;
     $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($directory));
